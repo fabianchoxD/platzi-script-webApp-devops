@@ -2,11 +2,11 @@ pipeline {
   agent any
 
   options {
-    timeout(time: 2, unit: 'MINUTES')
+    timeout(time: 20, unit: 'MINUTES')
   }
 
   environment {
-    ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
+    ARTIFACT_ID = "fabianv/webapp:${env.BUILD_NUMBER}"
   }
 
   stages {
